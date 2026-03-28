@@ -27,5 +27,5 @@ def diabetes_prediction(data: PatientDiabetesData):
     prediction = RF_model2.predict(xin)
     
     print("xin shape:", xin.shape)
-
+    print(labels[prediction[0]])
     return labels[prediction[0]]
